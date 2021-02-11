@@ -1,0 +1,25 @@
+# Example config to run cobaya in this directory
+# cobaya-run test.yaml
+likelihood:
+  cobaya_H0_ext.MCP:
+    python_path: .
+  cobaya_H0_ext.H0LiCOW:
+    python_path: .
+params:
+  H0:
+    prior:
+      min: 60
+      max: 100
+    ref:
+      dist: norm
+      loc: 73.2
+      scale: 1.3
+    proposal: 0.1
+    latex: H_0
+sampler:
+  mcmc:
+    #covmat: auto
+    #drag: true
+    oversample_power: 0.4
+    proposal_scale: 1.9
+output: chains/test

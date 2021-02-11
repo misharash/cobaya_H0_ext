@@ -1,0 +1,5 @@
+# Pesce et al (2020) value of H0 = 73.9 +/- 3.0 km/s/Mpc
+# https://arxiv.org/abs/2001.09213
+
+H0_mean: 73.9
+H0_std: 3.0

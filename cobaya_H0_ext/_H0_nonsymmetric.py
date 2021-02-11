@@ -20,4 +20,4 @@ class _H0_nonsymmetric(_H0_prototype):
     def logp(self, **params_values):
         H0_theory = self.provider.get_param("H0")
         H0_std = self.H0_std_m if H0_theory<self.H0_mean else self.H0_std_p
-        return ((H0_theory - self.H0_mean)/H0_std)**2/2
+        return -((H0_theory - self.H0_mean)/H0_std)**2/2

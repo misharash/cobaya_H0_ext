@@ -3,7 +3,7 @@ H0 extensions and examples for Cobaya
 """
 
 # New base class
-from ._H0_nonsymmetric import _H0_nonsymmetric
+from .H0_nonsymmetric import H0_nonsymmetric
 
 # Particular examples
 from .mcp import MCP
